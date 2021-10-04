@@ -1,0 +1,60 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #F6EADF;
+	font-family: "Comic Sans", sans-serif;
+	font-size: 16px;
+	color: #0D0C07;
+	margin: 0;
+}
+
+header {
+	text-align: center;
+	font-size: 1.25rem;
+	background-color: #696D7D;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+header > p {
+	margin: 0;
+}
+
+
+div.square-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1rem;
+	padding: 2rem;
+	
+}
+
+
+div.square-row {
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+	gap: 1rem;
+}
+
+div.square-item {
+	height: 100px;
+	width: 100px;
+	
+	border: 0.25rem solid black;
+}
+
+div.square-item:hover {
+	animation-name: pulse;
+	animation-duration: 0.3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes pulse {
+	100% { transform: scale(1.1); }
+}
