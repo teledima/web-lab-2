@@ -1,5 +1,5 @@
 const start_level = 1, 
-	  max_spread = 180, 
+	  max_spread = 90, 
 	  min_spread = 5, 
 	  time_beginner = 60, 
 	  time_normal = 30, 
