@@ -14,21 +14,56 @@ header {
 	text-align: center;
 	font-size: 1.25rem;
 	background-color: #696D7D;
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+button {
+	font-family: "Comic Sans", sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;
+	color: #0D0C07;
+	margin-top: 1rem;
+	min-width: 150px;
+	width: calc(1/7*100%);
+	height: 2.5rem;
+	background-color: #5B9A96;
+	
+	transition-duration: 0.3s;
+	transition-property: box-shadow;
+	transform: perspective(1px) translateZ(0);
+}
+
+button:hover {
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
 header > p {
-	margin: 0;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+p.session-info {
+	display: inline;
+	border: 5px inset #C49792;
 }
 
 
 div.square-container {
-	display: flex;
+	display: none;
 	flex-direction: column;
 	justify-content: center;
 	gap: 1rem;
-	padding: 2rem;
+	margin: 1.5rem;
 	
 }
 
@@ -47,7 +82,7 @@ div.square-item {
 	border: 0.25rem solid black;
 }
 
-div.square-item:hover {
+div.square-hover:hover {
 	animation-name: pulse;
 	animation-duration: 0.3s;
 	animation-timing-function: linear;
